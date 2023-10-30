@@ -1,0 +1,11 @@
+version: '3.3'
+services:
+  contentapi:
+    build: .
+    volumes:
+      - contentapi-db:/db
+    ports:
+      - "5000:5000"
+
+volumes:
+  contentapi-db:
